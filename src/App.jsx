@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
-import "./assets/scss/global.scss";
+import "../src/assets/scss/Global.scss";
 
 function App() {
   return (
