@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaGithub,FaLinkedinIn, FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa'; 
-import '../assets/scss/Global.scss'
+
 
 const Footer = () => {
   return (

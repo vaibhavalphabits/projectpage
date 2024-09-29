@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useRef } from 'react';
-import '../assets/scss/Global.scss';
+
 
 
 const Header = () => {
