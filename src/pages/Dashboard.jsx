@@ -4,8 +4,7 @@ import Header from "../components/Header";
 
 import ProjectCard from "../components/card";
 import Footer from "../components/Footer";
-import "../assets/scss/Global.scss";
-// import { Container } from "postcss";
+
 
 
 export default function Dashboard() {
