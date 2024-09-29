@@ -3,18 +3,32 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useRef } from 'react';
 import '../assets/scss/Global.scss';
-
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 
+
+
+
+gsap.registerPlugin(ScrollTrigger);
 const ProjectCard = ({imageURL}) => {
   const cardRef = useRef(null);
 
   useEffect(() => {
-   
+    const element = cardRef.current;
     gsap.fromTo(
-      cardRef.current,
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1.5, ease: 'power3.out', delay: 0.2 }
+      element,
+      { opacity: 0, y: 50 }, 
+      {
+        opacity: 1,
+        y: 0, 
+        duration: 1.5,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: element,
+          start: 'top 80%', 
+          toggleActions: 'play reverse play reverse', 
+        },
+      }
     );
   }, []);
 
@@ -49,7 +63,12 @@ const ProjectCard = ({imageURL}) => {
         <div className='Description'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iusto obcaecati maxime suscipit provident magni porro dolorem maiores at, repudiandae perferendis consequuntur ipsam sequi consequatur animi vero est laudantium ad nemo corporis.
         </div>
-        <div className='Button'href="#">View Project</div>
+        <a className="Button" href="#">
+          View Project
+        </a>
+        <a className="Button" href="#">
+          View Code
+        </a>
       </div>
     </div>
   );

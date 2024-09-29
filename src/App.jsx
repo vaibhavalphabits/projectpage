@@ -2,7 +2,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
-// import "../src/assets/scss/Global.scss";
+
 
 function App() {
   return (

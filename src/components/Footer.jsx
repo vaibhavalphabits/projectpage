@@ -6,7 +6,9 @@ import '../assets/scss/Global.scss'
 
 const Footer = () => {
   return (
-    <div className='FooterContainer'>
+    <div className='FooterContainer'
+    
+    >
       <div className='Copyright'>
         &copy; {new Date().getFullYear()} Junaid Nayeem . All Rights Reserved.
       </div>
