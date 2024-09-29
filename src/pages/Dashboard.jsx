@@ -2,9 +2,9 @@
 import React from "react";
 import Header from "../components/Header";
 
-import "../assets/scss/Global.scss";
 import ProjectCard from "../components/card";
 import Footer from "../components/Footer";
+import "../assets/scss/Global.scss";
 // import { Container } from "postcss";
 
 
